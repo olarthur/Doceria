@@ -21,20 +21,13 @@ Abaixo tem um curso legal que nos ajudara para aprender a desenvolver o site web
 
 Curso HTML5 e CSS3: Módulo 1 ao 5 [200 HORAS] - Prof Gustavo Guanabara
 
-**Curso:**
+**HTML/CSS:**
 https://www.cursoemvideo.com/curso/html5-css3-modulo1/
 
-**Curso:**
-https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/
+**JavaScript:**
+https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1
 
-**Curso:**
-https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-3-de-5-40-horas/
 
-**Curso:**
-https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/#google_vignette
-
-**Curso:**
-https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-5-de-5-40-horas/
 
 ## Professor
 Prof.  Daniel Ferreira de Barros Junior. - ([danielf@uni9.pro.br](mailto:danielf@uni9.pro.br))
