@@ -1,0 +1,225 @@
+/* Variáveis de Cores */
+:root {
+    --cor-principal: #FFC8A2;
+    --cor-secundaria: #884c4c;
+    --cor-acao: #FF6B6B;
+    --cor-fundo: #c59693;
+    --cor-texto: #333;
+    --cor-texto-branco: #FFF;
+    --cor-borda: #b88b8b;
+    --cor-fundo-pedido: #d6c66e86;
+}
+
+/* Reset e Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-principal);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--cor-secundaria);
+}
+
+header nav a {
+    color: var(--cor-secundaria);
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: var(--cor-acao);
+}
+
+/* Banner */
+#banner {
+    background: url('imagens/banner.png') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-texto-branco);
+}
+
+/* Título Principal */
+.titulo {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Seção Produtos */
+#produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    text-align: center;
+}
+
+/* Estilo de Imagens */
+div.imagem {
+    background-color: rgba(51, 51, 51, 0.7);
+    color: var(--cor-texto-branco);
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
+    height: 400px;
+    width: 100%;
+    max-width: 800px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+div.imagem:hover {
+    transform: scale(1.02);
+}
+
+div#img01 { 
+    background-image: url('imagens/imagem1.jpg'); 
+}
+div#img02 { 
+    background-image: url('imagens/imagem2.jpg'); 
+}
+div#img03 { 
+    background-image: url('imagens/imagem3.jpg'); 
+}
+div#img04 { 
+    background-image: url('imagens/imagem4.jpg'); 
+}
+
+/* Seção Pedido Personalizado */
+#pedido-personalizado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    background-color: var(--cor-fundo-pedido);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#pedido-personalizado h2 {
+    color: var(--cor-secundaria);
+    margin-bottom: 20px;
+}
+
+/* Estilo dos Campos do Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilo dos campos e botão */
+form label {
+    width: 100%;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: var(--cor-secundaria);
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-branco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: var(--cor-acao);
+    transform: scale(1.05);
+}
+
+#pedidoFeedback {
+    color: var(--cor-secundaria);
+    margin-top: 15px;
+}
+
+/* Seção Sobre e Contato */
+#sobre, #contato {
+    padding: 40px;
+    text-align: center;
+}
+
+#contato .social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    transition: color 0.3s ease;
+}
+
+#contato .social-icons a:hover {
+    color: var(--cor-acao);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    
+    #banner {
+        height: 300px;
+    }
+
+    .imagem {
+        height: 50px;
+        width: 100px;
+    }
+}

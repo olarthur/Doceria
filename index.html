@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doces Artesanais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Doces</h1>
+        <nav>
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner"></section>
+
+    <!-- Título Principal -->
+    <div class="titulo">
+        <h2>Título</h2>
+        <p>Descrição breve sobre a página ou serviço oferecido.</p>
+    </div>
+
+    <!-- Seção Produtos -->
+    <section id="produtos">
+        <h2>Conheça Nossos Doces</h2>
+        <div id="img01" class="imagem">
+            <h3>Bolos</h3>
+        </div>
+        <div id="img02" class="imagem">
+            <h3>Brigadeiros</h3>
+        </div>
+        <div id="img03" class="imagem">
+            <h3>Bolos de Pote</h3>
+        </div>
+        <div id="img04" class="imagem">
+            <h3>Doces de Coco & Cocadas</h3>
+        </div>
+    </section>
+
+    <!-- Seção Pedido Personalizado -->
+    <section id="pedido-personalizado">
+        <h2>Solicite seu Pedido </h2>
+        <form id="pedidoForm">
+            <!-- Campos do formulário -->
+            <label for="produto">Selecione o Produto:</label>
+            <select id="produto" name="produto" required>
+                <option value="">Selecione...</option>
+                <option value="bolo">Bolo</option>
+                <option value="brigadeiro">Brigadeiro</option>
+                <option value="bolo-pote">Bolo de Pote</option>
+                <option value="doces-de-coco">Doces de Coco</option>
+                <option value="cocada">Cocada</option>
+            </select>
+        
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
+        
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva o pedido..." required></textarea>
+        
+            <button type="submit">Enviar Pedido</button>
+        </form>
+        
+        <p id="pedidoFeedback"></p>
+        
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Informações sobre a história e missão da empresa.</p>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Celular: (11) 98413-9820</p>
+        <p>Telefone: 3501-6331</p>
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://whatsapp.com" target="_blank">WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Doces da Maria. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
