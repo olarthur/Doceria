@@ -34,6 +34,9 @@ header {
 
 header h1 {
     color: var(--cor-secundaria);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 header nav a {
@@ -55,16 +58,64 @@ header nav a:hover {
     align-items: center;
     justify-content: center;
     color: var(--cor-texto-branco);
+    font-size: 2.5rem;
+    text-align: center;
 }
 
 /* Título Principal */
 .titulo {
     text-align: center;
     background-color: rgba(138, 95, 95, 0.541);
-    color: #252525;
+    color: var(--cor-texto);
     padding: 20px;
     border-radius: 8px;
-    margin: 0px 10px;
+    margin: 20px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Seção Sobre */
+#sobre {
+    padding: 60px 20px;
+    background-color: var(--cor-principal);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#sobre h2 {
+    color: var(--cor-secundaria);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#sobre h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--cor-acao);
+    margin: 8px auto;
+}
+
+#sobre h3 {
+    color: var(--cor-secundaria);
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#sobre p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    max-width: 600px;
+    margin: 0 auto 15px;
 }
 
 /* Seção Produtos */
@@ -76,6 +127,22 @@ header nav a:hover {
     max-width: 1200px; 
     margin: 0 auto; 
     text-align: center;
+}
+
+#produtos h2 {
+    color: var(--cor-secundaria);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#produtos h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--cor-acao);
+    margin: 8px auto;
 }
 
 /* Estilo de Imagens */
@@ -98,6 +165,7 @@ div.imagem:hover {
     transform: scale(1.02);
 }
 
+/* Imagens específicas */
 div#img01 { 
     background-image: url('imagens/imagem1.jpg'); 
 }
@@ -129,10 +197,20 @@ div#img04 {
 
 #pedido h2 {
     color: var(--cor-secundaria);
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-/* Estilo dos Campos do Formulário */
+#pedido h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--cor-acao);
+    margin: 8px auto;
+}
+
+/* Formulário */
 form {
     display: flex;
     flex-direction: column;
@@ -140,7 +218,6 @@ form {
     width: 100%;
 }
 
-/* Estilo dos campos e botão */
 form label {
     width: 100%;
     text-align: left;
@@ -179,15 +256,25 @@ form button:hover {
     transform: scale(1.05);
 }
 
-#pedidoFeedback {
-    color: var(--cor-secundaria);
-    margin-top: 15px;
-}
-
-/* Seção Sobre e Contato */
-#sobre, #contato {
+/* Seção Contato */
+#contato {
     padding: 40px;
     text-align: center;
+}
+
+#contato h2 {
+    color: var(--cor-secundaria);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contato h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--cor-acao);
+    margin: 8px auto;
 }
 
 #contato .social-icons a {
@@ -221,7 +308,6 @@ footer {
     }
 
     .imagem {
-        height: 50px;
-        width: 100px;
+        height: 250px;
     }
 }
