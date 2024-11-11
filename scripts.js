@@ -31,6 +31,7 @@ telefoneInput.addEventListener("input", () => {
     telefoneFeedback.textContent = telPattern.test(telefoneInput.value)
         ? ""
         : "Por favor, use o formato (XX) XXXXX-XXXX.";
+    telefoneFeedback.classList.toggle('valid', telPattern.test(telefoneInput.value));
 });
 
 // Salvar dados do formulário no armazenamento local
