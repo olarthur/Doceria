@@ -60,9 +60,11 @@ header nav a:hover {
 /* Título Principal */
 .titulo {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(138, 95, 95, 0.541);
+    color: #252525;
     padding: 20px;
     border-radius: 8px;
+    margin: 0px 10px;
 }
 
 /* Seção Produtos */
