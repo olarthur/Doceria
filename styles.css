@@ -7,7 +7,6 @@
     --cor-texto: #333;
     --cor-texto-branco: #FFF;
     --cor-borda: #b88b8b;
-    --cor-fundo-pedido: #d3c898;
 }
 
 /* Reset e Estilos Globais */
@@ -199,7 +198,7 @@ div#img04 {
     justify-content: center;
     text-align: center;
     padding: 40px;
-    background-color: var(--cor-fundo-pedido);
+    background-color: var(--cor-principal);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
